@@ -1,0 +1,86 @@
+<USER_REQUEST>
+You are now working on the FINAL CLEANUP, UI OPTIMIZATION, AND FUNCTIONALITY IMPROVEMENT of my UniLook AI web application.
+
+The website has already been built using Google Stitch UI and integrated into my Next.js application.
+
+Now I want you to inspect the ENTIRE application and make it production-quality, clean, systematic, responsive, and fully functional.
+
+Do not rebuild the project from scratch. Improve the existing implementation.
+
+========================================
+PHASE 1 — REMOVE ALL UNNECESSARY DEFAULT AND DEMO CONTENT
+========================================
+
+The original Google Stitch design contained example universities, sample statistics, placeholder notifications, dummy college information, example cards, and other demonstration content.
+
+Some of these examples are still appearing in my actual website.
+
+I want you to identify and remove all such unnecessary demo content.
+
+Specifically:
+
+1. Remove hardcoded default universities that are displayed as if they are actual search results.
+2. Remove sample college names, fake university rankings, dummy fees, fake placement statistics, and placeholder admission information.
+3. Remove example conversations and pre-filled AI responses that appear as real user conversations.
+4. Remove dummy notifications, fake saved colleges, and sample comparison data.
+5. Remove placeholder profile information and fake user activity.
+6. Remove unnecessary demo statistics and fake dashboard metrics.
+7. Remove any sample content that could mislead a user into believing it is verified information.
+
+IMPORTANT:
+
+Do not remove actual UI components, useful categories, navigation, illustrations, or design elements just because they originally contained sample data.
+
+Replace unnecessary sample content with meaningful empty states.
+
+For example:
+
+- College search: "Search for a university to get started."
+- Search results: "No universities found. Try another search."
+- Saved colleges: "Your saved universities will appear here."
+- Compare colleges: "Select univer
+<truncated 8208 bytes>
+`npm run build`.
+16. Fix all relevant errors.
+
+Do not claim a feature is functional unless you have actually tested it.
+
+If a feature requires a missing database, authentication provider, API, or external integration, explain the dependency clearly. Do not simulate success or create fake functionality.
+
+========================================
+FINAL DESIGN EXPECTATION
+========================================
+
+The final UniLook AI website should:
+
+- Look premium and professional.
+- Have a clean, systematic layout.
+- Contain no misleading demo universities or fake statistics.
+- Never look unnecessarily empty.
+- Have properly organized information.
+- Have working buttons and navigation.
+- Have functional college search and AI enquiry.
+- Display reliable university information with sources.
+- Work smoothly on desktop and mobile.
+
+MOST IMPORTANT:
+
+Do not redesign everything from scratch.
+
+Preserve my existing Google Stitch UI design, improve its organization, remove unnecessary demo content, and make the existing features genuinely functional.
+
+Start by auditing the complete project, then implement the improvements systematically. Continue until the implementation and testing are complete.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-11-17T23:01:39+05:30.
+
+The user's current state is as follows:
+Active Document: c:\Users\padey\OneDrive\Desktop\COLLEGE AGENT\unilook-ai\supabase\schema.sql (LANGUAGE_UNSPECIFIED)
+Cursor is on line: 1
+Other open documents:
+- c:\Users\padey\OneDrive\Desktop\COLLEGE AGENT\unilook-ai\.env.local (LANGUAGE_UNSPECIFIED)
+- c:\Users\padey\OneDrive\Desktop\COLLEGE AGENT\unilook-ai\.gitignore (LANGUAGE_UNSPECIFIED)
+- c:\Users\padey\OneDrive\Desktop\COLLEGE AGENT\unilook-ai\supabase\migrations\20261117000000_unilook_initial_schema.sql (LANGUAGE_UNSPECIFIED)
+- c:\Users\padey\OneDrive\Desktop\COLLEGE AGENT\unilook-ai\src\lib\gemini.ts (LANGUAGE_UNSPECIFIED)
+- c:\Users\padey\OneDrive\Desktop\COLLEGE AGENT\unilook-ai\src\app\page.tsx (LANGUAGE_UNSPECIFIED)
+</ADDITIONAL_METADATA>

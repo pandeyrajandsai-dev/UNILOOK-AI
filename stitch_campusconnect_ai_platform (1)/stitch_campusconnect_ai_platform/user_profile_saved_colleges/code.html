@@ -1,0 +1,600 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container":"#9ee9b9","on-error":"#690005","on-secondary-fixed":"#002114","surface-variant":"#333537","inverse-surface":"#e2e2e5","secondary-fixed-dim":"#9cd2b5","outline":"#89938a","surface-container-lowest":"#0c0e10","on-surface-variant":"#bfc9bf","primary-fixed":"#a7f3c3","on-secondary-container":"#8bc1a4","surface":"#121416","on-tertiary-fixed":"#00210a","tertiary-container":"#006d30","surface-container":"#1e2022","on-tertiary-fixed-variant":"#005323","outline-variant":"#404942","secondary":"#9cd2b5","on-primary-fixed":"#002110","error":"#ffb4ab","on-primary":"#003920","surface-container-low":"#1a1c1e","secondary-fixed":"#b8efd0","on-secondary-fixed-variant":"#1b5039","surface-container-high":"#282a2c","on-secondary":"#003824","surface-dim":"#121416","on-tertiary-container":"#6ef18f","error-container":"#93000a","background":"#121416","tertiary":"#5cdf7f","on-surface":"#e2e2e5","on-tertiary":"#003916","inverse-primary":"#1f6b45","on-primary-fixed-variant":"#005230","primary":"#8cd6a8","surface-tint":"#8cd6a8","inverse-on-surface":"#2f3133","surface-container-highest":"#333537","primary-fixed-dim":"#8cd6a8","on-error-container":"#ffdad6","tertiary-fixed":"#79fc99","surface-bright":"#38393c","tertiary-fixed-dim":"#5cdf7f","on-background":"#e2e2e5","secondary-container":"#1b5039","primary-container":"#1f6b45"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-lg":"2rem","margin-lg":"3rem","gutter-sm":"1rem","margin-sm":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","space-md":"1rem","space-xs":"0.25rem","gutter":"1.5rem","margin":"2rem","space-xl":"2.5rem"},"fontFamily":{"body-sm":["Inter"],"body-lg":["Inter"],"label-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"code-inline":["Inter"]},"fontSize":{"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"700"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"display-lg-mobile":["34px",{"lineHeight":"42px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"code-inline":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"500"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface relative selection:bg-primary-container selection:text-on-primary-container"><div class="pointer-events-none fixed inset-0 z-0 overflow-hidden"><div class="absolute -top-40 -left-40 w-96 h-96 bg-primary-container/20 rounded-full blur-[128px]"></div><div class="absolute -bottom-40 -right-40 w-96 h-96 bg-tertiary-container/15 rounded-full blur-[140px]"></div></div><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-low/85 backdrop-blur-xl border-b border-outline-variant/30"><div class="h-16 w-full px-gutter-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><a class="flex items-center gap-space-sm" data-path="home" href="#"><img alt="UniLook AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAxdZdKHLG5INSxXunJpJfqTc17rdHuQ9TV29z6eqzNlU3PfdCkjB4FPFdinKK0I5-LuN703CM3uaHXS6ADEohb3eEjkQ69vijpLBCR-KLtfQ3gCgaAxp9ZTo6xVntOmqUSLfLSCaHsYyM4pgtd7iLtxnM06xqxEVI3Vusd0J__d7gNH_-Ynidugxq1GEiFGJnTco9tOYYAEcEUNFYyMamuB-rZhRLT6sMGbH5NmkAV"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">UniLook <span class="text-primary">AI</span></span></a><span class="px-space-xs py-0.5 rounded-full bg-error-container/40 text-error text-label-sm font-label-sm tracking-wider uppercase">v2.4 AI</span></div><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="text-primary font-bold"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="explore-colleges" href="#">Explore Colleges</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="college-enquiry" href="#">College Enquiry</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="ai-assistant" href="#">AI Assistant</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="compare" href="#">Compare</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="saved" href="#">Saved</a></nav><div class="flex items-center gap-space-sm shrink-0"><button class="hidden md:flex items-center gap-space-sm bg-surface-container px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">search</span><span class="font-body-sm text-body-sm">Search universities...</span><kbd class="font-code-inline text-code-inline px-1.5 py-0.5 rounded bg-surface-variant text-on-surface-variant">⌘K</kbd></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><a class="flex items-center gap-space-xs bg-primary-container text-on-primary-container px-space-md py-2 rounded-lg font-label-lg text-label-lg shadow-[0_0_16px_rgba(31,107,69,0.45)] hover:bg-secondary-container hover:text-on-secondary-container transition-all" data-path="ai-assistant" href="#"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span class="hidden sm:inline">Ask AI</span></a><a class="shrink-0 ring-1 ring-outline-variant/40 rounded-full" data-path="profile-settings" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYfJHcfO6byWXnqxsJLYEGG3jSURuArzHoueXFBh0fm3fHn9ga6Onl3HdG0C3JHP8QQ0fvbWbPSOrBFP0zMuEnSE1V-hgqAXkyawbJCKPvYfvzu10Cq4w8FtWlsg_5y4uRMLS9Slc27n0lncR5Kxo43Qh2b7OblDAGhn0TORm-gieYK36D6CHZ0C3r09YzTVVM8YAP5wZ16_4nhERGJJdNa3RQ9Y1r6cioLCBF7BI"></a></div></div></header><main class="relative z-10 w-full pt-16 min-h-screen bg-transparent"><div class="flex flex-col w-full">
+<div class="w-full px-gutter-sm sm:px-gutter md:px-gutter-lg max-w-[1440px] mx-auto py-space-lg flex flex-col gap-space-lg">
+<!-- Profile Hub Header Card (Tier 2 Floating Card) -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg md:p-space-xl shadow-xl">
+<!-- Ambient Glow Behind User Identity -->
+<div class="pointer-events-none absolute -top-24 -right-16 w-80 h-80 rounded-full bg-primary-container/20 blur-[100px]"></div>
+<div class="pointer-events-none absolute -bottom-20 left-1/3 w-64 h-64 rounded-full bg-tertiary-container/15 blur-[90px]"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<!-- Identity Group -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-lg min-w-0">
+<div class="relative shrink-0">
+<img alt="Elena Vance Profile Portrait" class="w-24 h-24 sm:w-28 sm:h-28 rounded-xl object-cover shadow-md ring-2 ring-primary/25" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYfJHcfO6byWXnqxsJLYEGG3jSURuArzHoueXFBh0fm3fHn9ga6Onl3HdG0C3JHP8QQ0fvbWbPSOrBFP0zMuEnSE1V-hgqAXkyawbJCKPvYfvzu10Cq4w8FtWlsg_5y4uRMLS9Slc27n0lncR5Kxo43Qh2b7OblDAGhn0TORm-gieYK36D6CHZ0C3r09YzTVVM8YAP5wZ16_4nhERGJJdNa3RQ9Y1r6cioLCBF7BI">
+<span class="absolute -bottom-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full bg-surface-container-lowest text-primary shadow-sm ring-2 ring-surface">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</span>
+</div>
+<div class="flex flex-col gap-space-xs min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs sm:gap-space-sm">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Elena Vance</h1>
+<span class="inline-flex items-center gap-1 rounded-full bg-primary-container/30 px-space-sm py-0.5 font-label-sm text-label-sm text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+                PRO SCHOLAR
+              </span>
+<span class="inline-flex items-center rounded-full bg-surface-container-high px-space-sm py-0.5 font-label-sm text-label-sm text-on-surface-variant">
+                TARGET: M.S. / PH.D.
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Graduate Applicant (Fall 2025) • Specialization: <span class="text-on-surface font-medium">AI &amp; Neural Computing Architectures</span>
+</p>
+<div class="flex flex-wrap items-center gap-space-xs pt-1">
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px] text-tertiary">public</span>
+                Target: US, UK, Canada
+              </span>
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px] text-primary">psychology</span>
+                Autonomous Match Engine Active
+              </span>
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px] text-secondary">database</span>
+                FERPA Vault Sync: 100%
+              </span>
+</div>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex items-center gap-space-sm shrink-0 w-full sm:w-auto">
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-space-xs rounded-lg bg-surface-container-high px-space-md py-2.5 font-label-lg text-label-lg text-on-surface hover:bg-surface-variant transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Edit Profile</span>
+</button>
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-space-xs rounded-lg bg-primary-container px-space-md py-2.5 font-label-lg text-label-lg text-on-primary-container shadow-[0_0_20px_rgba(31,107,69,0.35)] hover:bg-secondary-container transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+<span>Neural Match Review</span>
+</button>
+</div>
+</div>
+<!-- Quick Metrics Ribbon (Shifted Background) -->
+<div class="mt-space-lg grid grid-cols-2 md:grid-cols-4 gap-space-sm sm:gap-space-md pt-space-md bg-surface-container/60 p-space-md rounded-lg">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Saved Universities</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold">4</span>
+<span class="font-label-md text-label-md text-primary">+1 this week</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">AI Queries Prompted</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold">18</span>
+<span class="font-label-md text-label-md text-tertiary">96% clarity</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Saved Matrices</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold">3</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Peer comparisons</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Active Applications</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-headline-lg text-headline-lg text-tertiary font-semibold">2</span>
+<span class="font-label-md text-label-md text-error">Dec 3 urgent</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Navigation Segment Tabs -->
+<div class="flex items-center overflow-x-auto no-scrollbar gap-space-xs p-1 bg-surface-container-lowest rounded-xl shadow-inner">
+<button class="shrink-0 flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container text-primary font-label-lg text-label-lg shadow-sm">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+<span>Saved Colleges</span>
+<span class="ml-1 px-1.5 py-0.2 rounded-full bg-primary-container text-on-primary-container text-label-sm">4</span>
+</button>
+<button class="shrink-0 flex items-center gap-space-xs px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+<span>Recent Enquiries &amp; AI Chats</span>
+<span class="ml-1 px-1.5 py-0.2 rounded-full bg-surface-container-high text-on-surface-variant text-label-sm">12</span>
+</button>
+<button class="shrink-0 flex items-center gap-space-xs px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[18px]">compare_arrows</span>
+<span>Saved Comparisons</span>
+<span class="ml-1 px-1.5 py-0.2 rounded-full bg-surface-container-high text-on-surface-variant text-label-sm">3</span>
+</button>
+<button class="shrink-0 flex items-center gap-space-xs px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[18px]">event_upcoming</span>
+<span>Deadlines &amp; Checklist</span>
+</button>
+<button class="shrink-0 flex items-center gap-space-xs px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[18px]">settings_alert</span>
+<span>Account &amp; Notifications</span>
+</button>
+</div>
+<!-- Main Workspace Split (70/30 Grid on Large Displays) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Primary Column: Saved Colleges Hub & Live Tracking (8 Cols) -->
+<div class="xl:col-span-8 flex flex-col gap-space-lg min-w-0">
+<!-- Section Bar with Quick Filter -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">account_balance</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Target Institution Registry</h2>
+<span class="text-label-sm text-on-surface-variant">Sorted by AI Match Score</span>
+</div>
+<div class="flex items-center gap-space-xs self-stretch sm:self-auto">
+<div class="relative flex-1 sm:w-48">
+<input class="w-full bg-surface-container px-space-sm py-1.5 pl-8 rounded-lg text-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Filter saved..." type="text">
+<span class="material-symbols-outlined absolute left-2 top-2 text-[16px] text-on-surface-variant">filter_list</span>
+</div>
+<button class="p-1.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Export PDF Brief">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+</button>
+</div>
+</div>
+<!-- 4 Saved Colleges Grid Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Card 1: MIT -->
+<div class="group relative rounded-xl bg-surface-container-low p-space-lg flex flex-col justify-between transition-all duration-300 hover:bg-surface-container hover:shadow-xl hover:-translate-y-1">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center font-headline-sm font-bold text-primary shadow-inner">
+                    MIT
+                  </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Massachusetts Institute of Technology</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cambridge, MA, USA • EECS Ph.D. Track</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1" title="Remove MIT" type="button">
+<span class="material-symbols-outlined text-[20px]">bookmark_remove</span>
+</button>
+</div>
+<!-- Visual Readiness Ring & Metadata -->
+<div class="grid grid-cols-2 gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg">
+<div class="flex items-center gap-space-sm">
+<!-- SVG Circular Progress Indicator -->
+<div class="relative w-11 h-11 shrink-0">
+<svg class="w-full h-full -rotate-90" viewBox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="92, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute inset-0 flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">92%</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">AI Readiness</span>
+<span class="font-body-sm text-body-sm font-medium text-tertiary">Strong Calibration</span>
+</div>
+</div>
+<div class="flex flex-col justify-center min-w-0 pl-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Next Deadline</span>
+<div class="flex items-center gap-1 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-error">calendar_clock</span>
+<span>Dec 15, 2024</span>
+</div>
+</div>
+</div>
+<!-- Tags / Badges -->
+<div class="flex flex-wrap gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant">GRE Optional</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant">Fellowship Eligible</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container/20 text-primary">Saved 2 days ago</span>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center gap-space-xs mt-space-md pt-space-sm">
+<a class="flex-1 inline-flex items-center justify-center gap-1 rounded-lg bg-surface-container-high px-space-sm py-2 font-label-md text-label-md text-on-surface hover:bg-surface-variant transition-colors" data-path="college-enquiry" href="#">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Open Enquiry</span>
+</a>
+<a class="flex-1 inline-flex items-center justify-center gap-1 rounded-lg bg-primary-container px-space-sm py-2 font-label-md text-label-md text-on-primary-container hover:bg-secondary-container transition-colors" data-path="ai-assistant" href="#">
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+<span>Launch AI Chat</span>
+</a>
+</div>
+</div>
+<!-- Card 2: Stanford University -->
+<div class="group relative rounded-xl bg-surface-container-low p-space-lg flex flex-col justify-between transition-all duration-300 hover:bg-surface-container hover:shadow-xl hover:-translate-y-1">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center font-headline-sm font-bold text-error shadow-inner">
+                    SU
+                  </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Stanford University</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Stanford, CA, USA • Computer Science M.S.</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1" title="Remove Stanford" type="button">
+<span class="material-symbols-outlined text-[20px]">bookmark_remove</span>
+</button>
+</div>
+<!-- Visual Readiness Ring & Metadata -->
+<div class="grid grid-cols-2 gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-11 h-11 shrink-0">
+<svg class="w-full h-full -rotate-90" viewBox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="88, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute inset-0 flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">88%</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">AI Readiness</span>
+<span class="font-body-sm text-body-sm font-medium text-primary">Very Competitive</span>
+</div>
+</div>
+<div class="flex flex-col justify-center min-w-0 pl-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Next Deadline</span>
+<div class="flex items-center gap-1 text-error font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-error animate-pulse">priority_high</span>
+<span class="font-bold">Dec 3, 2024</span>
+</div>
+</div>
+</div>
+<!-- Tags / Badges -->
+<div class="flex flex-wrap gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-error-container/30 text-error font-semibold">Priority 1 Target</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant">SOP Draft Pending</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container/20 text-primary">Saved 4 days ago</span>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center gap-space-xs mt-space-md pt-space-sm">
+<a class="flex-1 inline-flex items-center justify-center gap-1 rounded-lg bg-surface-container-high px-space-sm py-2 font-label-md text-label-md text-on-surface hover:bg-surface-variant transition-colors" data-path="college-enquiry" href="#">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Open Enquiry</span>
+</a>
+<a class="flex-1 inline-flex items-center justify-center gap-1 rounded-lg bg-primary-container px-space-sm py-2 font-label-md text-label-md text-on-primary-container hover:bg-secondary-container transition-colors" data-path="ai-assistant" href="#">
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+<span>Launch AI Chat</span>
+</a>
+</div>
+</div>
+<!-- Card 3: UC Berkeley -->
+<div class="group relative rounded-xl bg-surface-container-low p-space-lg flex flex-col justify-between transition-all duration-300 hover:bg-surface-container hover:shadow-xl hover:-translate-y-1">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center font-headline-sm font-bold text-secondary shadow-inner">
+                    CAL
+                  </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">UC Berkeley</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Berkeley, CA, USA • EECS Graduate Division</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1" title="Remove UC Berkeley" type="button">
+<span class="material-symbols-outlined text-[20px]">bookmark_remove</span>
+</button>
+</div>
+<!-- Visual Readiness Ring & Metadata -->
+<div class="grid grid-cols-2 gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-11 h-11 shrink-0">
+<svg class="w-full h-full -rotate-90" viewBox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="85, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute inset-0 flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">85%</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">AI Readiness</span>
+<span class="font-body-sm text-body-sm font-medium text-primary">High Alignment</span>
+</div>
+</div>
+<div class="flex flex-col justify-center min-w-0 pl-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Next Deadline</span>
+<div class="flex items-center gap-1 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-tertiary">calendar_today</span>
+<span>Jan 5, 2025</span>
+</div>
+</div>
+</div>
+<!-- Tags / Badges -->
+<div class="flex flex-wrap gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant">In-State Residency Pathway</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant">Lab: BAIR</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container/20 text-primary">Saved 1 wk ago</span>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center gap-space-xs mt-space-md pt-space-sm">
+<a class="flex-1 inline-flex items-center justify-center gap-1 rounded-lg bg-surface-container-high px-space-sm py-2 font-label-md text-label-md text-on-surface hover:bg-surface-variant transition-colors" data-path="college-enquiry" href="#">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Open Enquiry</span>
+</a>
+<a class="flex-1 inline-flex items-center justify-center gap-1 rounded-lg bg-primary-container px-space-sm py-2 font-label-md text-label-md text-on-primary-container hover:bg-secondary-container transition-colors" data-path="ai-assistant" href="#">
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+<span>Launch AI Chat</span>
+</a>
+</div>
+</div>
+<!-- Card 4: Imperial College London -->
+<div class="group relative rounded-xl bg-surface-container-low p-space-lg flex flex-col justify-between transition-all duration-300 hover:bg-surface-container hover:shadow-xl hover:-translate-y-1">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center font-headline-sm font-bold text-tertiary shadow-inner">
+                    ICL
+                  </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Imperial College London</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">South Kensington, UK • Dept of Computing</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1" title="Remove Imperial" type="button">
+<span class="material-symbols-outlined text-[20px]">bookmark_remove</span>
+</button>
+</div>
+<!-- Visual Readiness Ring & Metadata -->
+<div class="grid grid-cols-2 gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-11 h-11 shrink-0">
+<svg class="w-full h-full -rotate-90" viewBox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="79, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute inset-0 flex items-center justify-center font-label-sm text-label-sm font-bold text-on-surface">79%</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">AI Readiness</span>
+<span class="font-body-sm text-body-sm font-medium text-secondary">Target Range</span>
+</div>
+</div>
+<div class="flex flex-col justify-center min-w-0 pl-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Next Deadline</span>
+<div class="flex items-center gap-1 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-tertiary">calendar_today</span>
+<span>Jan 15, 2025</span>
+</div>
+</div>
+</div>
+<!-- Tags / Badges -->
+<div class="flex flex-wrap gap-1.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant">Tier 4 Student Visa</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant">EPSRC Grant Open</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-container/20 text-primary">Saved 2 wks ago</span>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center gap-space-xs mt-space-md pt-space-sm">
+<a class="flex-1 inline-flex items-center justify-center gap-1 rounded-lg bg-surface-container-high px-space-sm py-2 font-label-md text-label-md text-on-surface hover:bg-surface-variant transition-colors" data-path="college-enquiry" href="#">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Open Enquiry</span>
+</a>
+<a class="flex-1 inline-flex items-center justify-center gap-1 rounded-lg bg-primary-container px-space-sm py-2 font-label-md text-label-md text-on-primary-container hover:bg-secondary-container transition-colors" data-path="ai-assistant" href="#">
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+<span>Launch AI Chat</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Section 4: Recent Enquiries & AI Chat History Widget -->
+<div class="rounded-xl bg-surface-container-low p-space-lg flex flex-col gap-space-md shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">mark_chat_read</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Recent Enquiries &amp; Neural Reasoning Threads</h3>
+</div>
+<a class="font-label-md text-label-md text-primary hover:underline inline-flex items-center gap-1" data-path="ai-assistant" href="#">
+<span>View All 12 Threads</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Thread 1 -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm p-space-md rounded-lg bg-surface-container-high hover:bg-surface-variant transition-colors">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="p-2 rounded bg-primary-container/30 text-primary shrink-0 mt-0.5 sm:mt-0">
+<span class="material-symbols-outlined text-[18px]">smart_toy</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">"What are the GRE cutoffs and faculty funding odds for Stanford AI Lab (SAIL) 2025?"</span>
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant mt-0.5">
+<span class="text-tertiary font-medium">Answered with 4 faculty citations</span>
+<span>•</span>
+<span>3 hours ago</span>
+<span>•</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-on-surface text-[11px]">Stanford CS</span>
+</div>
+</div>
+</div>
+<a class="shrink-0 inline-flex items-center gap-1 text-label-md text-primary hover:text-on-primary-container font-label-md px-3 py-1.5 rounded-lg bg-surface-container" data-path="ai-assistant" href="#">
+<span>Resume Conversation</span>
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</a>
+</div>
+<!-- Thread 2 -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm p-space-md rounded-lg bg-surface-container-high hover:bg-surface-variant transition-colors">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="p-2 rounded bg-secondary-container/40 text-secondary shrink-0 mt-0.5 sm:mt-0">
+<span class="material-symbols-outlined text-[18px]">domain_verification</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">"Official Enquiry submitted: Request for Graduate Admissions Syllabi Cross-Validation"</span>
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant mt-0.5">
+<span class="text-primary font-medium">Pending Registrar Confirmation</span>
+<span>•</span>
+<span>Yesterday</span>
+<span>•</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-on-surface text-[11px]">MIT EECS</span>
+</div>
+</div>
+</div>
+<a class="shrink-0 inline-flex items-center gap-1 text-label-md text-on-surface-variant hover:text-on-surface font-label-md px-3 py-1.5 rounded-lg bg-surface-container" data-path="college-enquiry" href="#">
+<span>View Dispatch Status</span>
+<span class="material-symbols-outlined text-[16px]">launch</span>
+</a>
+</div>
+<!-- Thread 3 -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm p-space-md rounded-lg bg-surface-container-high hover:bg-surface-variant transition-colors">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="p-2 rounded bg-primary-container/30 text-primary shrink-0 mt-0.5 sm:mt-0">
+<span class="material-symbols-outlined text-[18px]">calculate</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">"Cost of living in South Kensington London vs Berkeley Northside with stipend comparison"</span>
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant mt-0.5">
+<span class="text-on-surface-variant font-medium">Breakdown complete: Net savings delta £4,200/yr</span>
+<span>•</span>
+<span>4 days ago</span>
+</div>
+</div>
+</div>
+<a class="shrink-0 inline-flex items-center gap-1 text-label-md text-primary hover:text-on-primary-container font-label-md px-3 py-1.5 rounded-lg bg-surface-container" data-path="ai-assistant" href="#">
+<span>Resume Conversation</span>
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Column: Deadlines, Comparisons & AI Insights (4 Cols) -->
+<div class="xl:col-span-4 flex flex-col gap-space-lg min-w-0">
+<!-- Section 6: Application Deadlines & Alerts Tracker -->
+<div class="rounded-xl bg-surface-container-low p-space-lg flex flex-col gap-space-md shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[20px]">notifications_active</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Critical Deadlines</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container/40 text-error font-label-sm text-label-sm font-bold uppercase tracking-wider">
+              2 Urgent
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Automated calendar synchronization with official departmental boards.
+          </p>
+<!-- Timeline Items -->
+<div class="flex flex-col gap-space-sm">
+<!-- Deadline 1: Urgent Crimson -->
+<div class="relative pl-6 pb-2">
+<div class="absolute left-2 top-1.5 bottom-0 w-0.5 bg-surface-variant"></div>
+<div class="absolute left-0.5 top-1.5 w-3.5 h-3.5 rounded-full bg-error ring-4 ring-error/20"></div>
+<div class="flex flex-col bg-surface-container p-space-sm rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Stanford CS Ph.D. Deadline</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-error-container text-on-error font-bold">18 DAYS LEFT</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">December 3, 2024 • 11:59 PM PST</span>
+<div class="flex items-center gap-2 mt-2 pt-2 border-t border-outline-variant/20">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span class="text-body-sm text-on-surface-variant line-through">Transcripts verified</span>
+<span class="material-symbols-outlined text-[16px] text-error ml-auto">radio_button_unchecked</span>
+<span class="text-body-sm text-error font-medium">1 LOR missing</span>
+</div>
+</div>
+</div>
+<!-- Deadline 2: Medium Urgency -->
+<div class="relative pl-6 pb-2">
+<div class="absolute left-2 top-1.5 bottom-0 w-0.5 bg-surface-variant"></div>
+<div class="absolute left-0.5 top-1.5 w-3.5 h-3.5 rounded-full bg-primary ring-4 ring-primary/20"></div>
+<div class="flex flex-col bg-surface-container p-space-sm rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">MIT EECS Priority Deadline</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-surface-variant text-on-surface-variant">30 DAYS LEFT</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">December 15, 2024 • 5:00 PM EST</span>
+<div class="flex items-center gap-2 mt-2 pt-2 border-t border-outline-variant/20">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span class="text-body-sm text-on-surface-variant">Faculty Pre-Contact Confirmed</span>
+</div>
+</div>
+</div>
+<!-- Deadline 3: Winter Cycle -->
+<div class="relative pl-6">
+<div class="absolute left-0.5 top-1.5 w-3.5 h-3.5 rounded-full bg-surface-variant"></div>
+<div class="flex flex-col bg-surface-container p-space-sm rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">UC Berkeley Grad Division</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-surface-variant text-on-surface-variant">51 DAYS LEFT</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">January 5, 2025 • 8:59 PM PST</span>
+</div>
+</div>
+</div>
+<button class="w-full inline-flex items-center justify-center gap-space-xs rounded-lg bg-surface-container-high py-2 text-label-md text-label-md text-on-surface hover:bg-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Sync to Google / Apple Calendar</span>
+</button>
+</div>
+<!-- Section 5: Recently Compared Colleges Widget -->
+<div class="rounded-xl bg-surface-container-low p-space-lg flex flex-col gap-space-md shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">balance</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Saved Comparisons</h3>
+</div>
+<a class="font-label-md text-label-md text-secondary hover:underline" data-path="compare" href="#">
+              Full Matrix
+            </a>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Comparison 1 -->
+<a class="group flex flex-col p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors" data-path="compare" href="#">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface group-hover:text-primary transition-colors">MIT vs Stanford</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary group-hover:translate-x-0.5 transition-all">chevron_right</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                CS Ph.D. Track • Faculty Citations, Lab Funding, Placement Rates compared.
+              </p>
+<div class="mt-2 flex items-center justify-between text-label-sm text-label-sm text-on-surface-variant pt-2 border-t border-outline-variant/20">
+<span>Result: MIT higher stipend ($48k vs $45k)</span>
+<span class="text-primary font-semibold">Decisive 8.8/10</span>
+</div>
+</a>
+<!-- Comparison 2 -->
+<a class="group flex flex-col p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors" data-path="compare" href="#">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-on-surface group-hover:text-primary transition-colors">UC Berkeley vs Georgia Tech</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary group-hover:translate-x-0.5 transition-all">chevron_right</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Robotics &amp; Perception Track • In-state vs Out-of-state tuition delta.
+              </p>
+<div class="mt-2 flex items-center justify-between text-label-sm text-label-sm text-on-surface-variant pt-2 border-t border-outline-variant/20">
+<span>Result: GT lower cost, Berkeley higher citation count</span>
+<span class="text-tertiary font-semibold">Tied Matrix</span>
+</div>
+</a>
+</div>
+<a class="inline-flex items-center justify-center gap-space-xs rounded-lg bg-surface-container py-2 text-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-variant transition-colors" data-path="compare" href="#">
+<span class="material-symbols-outlined text-[16px]">add_chart</span>
+<span>Build New Comparison Matrix</span>
+</a>
+</div>
+<!-- Admissions Neural Readiness Card -->
+<div class="rounded-xl bg-primary-container/20 p-space-lg flex flex-col gap-space-sm relative overflow-hidden shadow-md">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">psychology_alt</span>
+<span class="font-label-md text-label-md font-bold uppercase tracking-wider">AI Readiness Summary</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Target Readiness: 88.5% Aggregate</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Based on Elena Vance's uploaded transcript (GPA 3.94), 2 IEEE workshop publications, and 3 faculty endorsements, target admissions confidence is in the 90th percentile across tier-1 AI programs.
+          </p>
+<div class="mt-space-xs pt-space-xs flex items-center justify-between">
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-bold hover:underline" data-path="ai-assistant" href="#">
+<span>View Quantitative Profile Audit</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="relative z-10 w-full bg-surface-container-lowest border-t border-outline-variant/30 py-space-xl"><div class="w-full px-gutter-lg flex flex-col gap-space-xl"><div class="flex flex-col lg:flex-row justify-between items-start gap-space-lg"><div class="max-w-md"><div class="flex items-center gap-space-sm mb-space-sm"><img alt="UniLook AI Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAxdZdKHLG5INSxXunJpJfqTc17rdHuQ9TV29z6eqzNlU3PfdCkjB4FPFdinKK0I5-LuN703CM3uaHXS6ADEohb3eEjkQ69vijpLBCR-KLtfQ3gCgaAxp9ZTo6xVntOmqUSLfLSCaHsYyM4pgtd7iLtxnM06xqxEVI3Vusd0J__d7gNH_-Ynidugxq1GEiFGJnTco9tOYYAEcEUNFYyMamuB-rZhRLT6sMGbH5NmkAV"><span class="font-headline-sm text-headline-sm text-on-surface">UniLook <span class="text-primary">AI</span></span></div><p class="font-body-md text-body-md text-on-surface-variant mb-space-md">Autonomous academic institutional intelligence engine powering admissions reasoning, syllabus synthesis, and predictive matching for aspiring global scholars.</p><div class="inline-flex items-center gap-space-sm px-space-md py-1 rounded-full bg-surface-container border border-outline-variant/40"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Neural Knowledge Graph Active</span></div></div><div class="grid grid-cols-2 md:grid-cols-3 gap-space-xl"><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface">Colleges &amp; Programs</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="explore-colleges" href="#">Ivy League &amp; Global Elite</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="explore-colleges" href="#">STEM Institutes</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="explore-colleges" href="#">Business Schools</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="explore-colleges" href="#">Public Research Universities</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface">Admissions Intel</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="college-enquiry" href="#">Direct Institutional Enquiry</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="compare" href="#">Criteria Matrix Comparison</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="ai-assistant" href="#">AI Acceptance Probability</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="scholarships" href="#">Financial Aid Benchmarking</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface">Trust &amp; Standards</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="model-transparency" href="#">AI Transparency Report</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="privacy-charter" href="#">Student Privacy Charter</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="accreditations" href="#">Accreditation Sources</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" data-path="ethics" href="#">Algorithmic Fairness</a></div></div></div><div class="pt-space-lg border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-space-md text-on-surface-variant"><div class="flex flex-wrap items-center gap-space-md"><span class="font-body-sm text-body-sm">© 2025 UniLook AI Inc. All rights reserved.</span><span class="inline-flex items-center gap-1 font-body-sm text-body-sm px-2 py-0.5 rounded bg-surface-container border border-outline-variant/30 text-on-surface"><span class="material-symbols-outlined text-[14px] text-primary">verified</span>FERPA &amp; GDPR Certified</span></div><p class="font-body-sm text-body-sm max-w-xl text-center md:text-right">AI model outputs reference institutional catalogs updated hourly. Guidance is advisory and non-binding regarding ultimate admissions verdicts.</p></div></div></footer>
+
+</body></html>

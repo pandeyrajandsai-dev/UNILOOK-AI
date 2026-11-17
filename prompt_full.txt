@@ -1,0 +1,348 @@
+<USER_REQUEST>
+You are now working on the FINAL CLEANUP, UI OPTIMIZATION, AND FUNCTIONALITY IMPROVEMENT of my UniLook AI web application.
+
+The website has already been built using Google Stitch UI and integrated into my Next.js application.
+
+Now I want you to inspect the ENTIRE application and make it production-quality, clean, systematic, responsive, and fully functional.
+
+Do not rebuild the project from scratch. Improve the existing implementation.
+
+========================================
+PHASE 1 — REMOVE ALL UNNECESSARY DEFAULT AND DEMO CONTENT
+========================================
+
+The original Google Stitch design contained example universities, sample statistics, placeholder notifications, dummy college information, example cards, and other demonstration content.
+
+Some of these examples are still appearing in my actual website.
+
+I want you to identify and remove all such unnecessary demo content.
+
+Specifically:
+
+1. Remove hardcoded default universities that are displayed as if they are actual search results.
+2. Remove sample college names, fake university rankings, dummy fees, fake placement statistics, and placeholder admission information.
+3. Remove example conversations and pre-filled AI responses that appear as real user conversations.
+4. Remove dummy notifications, fake saved colleges, and sample comparison data.
+5. Remove placeholder profile information and fake user activity.
+6. Remove unnecessary demo statistics and fake dashboard metrics.
+7. Remove any sample content that could mislead a user into believing it is verified information.
+
+IMPORTANT:
+
+Do not remove actual UI components, useful categories, navigation, illustrations, or design elements just because they originally contained sample data.
+
+Replace unnecessary sample content with meaningful empty states.
+
+For example:
+
+- College search: "Search for a university to get started."
+- Search results: "No universities found. Try another search."
+- Saved colleges: "Your saved universities will appear here."
+- Compare colleges: "Select universities to compare."
+- AI chat: "Ask anything about your selected university."
+- Notifications: "You're all caught up."
+
+The website should never look empty or unfinished.
+
+Maintain attractive layouts, useful guidance text, icons, subtle illustrations, and properly designed empty states.
+
+========================================
+PHASE 2 — MAKE THE WEBSITE CLEAN AND SYSTEMATIC
+========================================
+
+Some parts of the current UI look congested and overcrowded.
+
+Audit every page and improve the visual hierarchy.
+
+Requirements:
+
+1. Improve spacing between sections.
+2. Fix inconsistent margins and padding.
+3. Improve alignment of cards, headings, buttons, and icons.
+4. Avoid unnecessary information being displayed simultaneously.
+5. Organize related information into logical sections.
+6. Use consistent card sizes and spacing.
+7. Improve typography hierarchy.
+8. Make headings, descriptions, and supporting information easy to distinguish.
+9. Avoid excessive borders, shadows, gradients, and decorative elements.
+10. Make important actions visually prominent.
+11. Keep secondary actions subtle.
+12. Use whitespace intelligently without making the interface look empty.
+13. Make long information sections easier to navigate.
+14. Use responsive grids and layouts.
+15. Prevent overlapping elements, horizontal overflow, and unnecessarily long sections.
+
+The interface should feel premium, modern, minimal, and professional.
+
+Preserve the original Google Stitch visual identity and color palette:
+
+- Charcoal Black: #111315
+- Deep Charcoal: #191D1B
+- Graphite: #202522
+- Forest Green: #1F6B45
+- Deep Emerald: #174C36
+- Crimson Red: #DC3545
+- Neon Green: #7CFF9B
+
+Use neon effects sparingly.
+
+Do not change the overall design identity.
+
+========================================
+PHASE 3 — COMPLETE FUNCTIONALITY AUDIT
+========================================
+
+This is extremely important.
+
+Inspect EVERY page and EVERY interactive element in the entire application.
+
+Test all:
+
+- Navbar links.
+- Sidebar links.
+- Search bars.
+- Search buttons.
+- College result cards.
+- College selection buttons.
+- Category navigation.
+- AI chat interface.
+- Send message buttons.
+- Chat input fields.
+- New conversation buttons.
+- College comparison features.
+- Add/remove comparison buttons.
+- Save/unsave college buttons.
+- Saved colleges page.
+- Notifications.
+- Profile menu.
+- Settings.
+- Filters.
+- Sorting options.
+- Tabs.
+- Dropdown menus.
+- Modal dialogs.
+- Back buttons.
+- Clear search buttons.
+- Retry buttons.
+- Mobile navigation menu.
+- Any other visible interactive controls.
+
+For each element, verify that its action actually works.
+
+Do not consider a button functional simply because it looks clickable.
+
+========================================
+PHASE 4 — IMPLEMENT REAL FUNCTIONALITY
+========================================
+
+Connect every existing UI control to its appropriate functionality.
+
+Examples:
+
+1. College search:
+   - Accept a college name from the user.
+   - Call the existing college-search API.
+   - Display actual search results.
+   - Support loading, error, and no-results states.
+   - Allow the user to select the correct university.
+
+2. College selection:
+   - Store the selected university in application state.
+   - Display the selected university throughout the enquiry dashboard.
+   - Ensure all enquiry categories use the selected university's context.
+
+3. AI Assistant:
+   - Connect the chat interface to the existing Gemini enquiry API.
+   - Allow users to type and send questions.
+   - Display loading indicators while waiting.
+   - Display AI responses correctly.
+   - Preserve conversation context for follow-up questions.
+   - Handle API errors gracefully.
+   - Display reliable sources and citations whenever available.
+
+4. Enquiry categories:
+   - Courses
+   - Fees
+   - Admissions
+   - Eligibility
+   - Placements
+   - Scholarships
+   - Hostel
+   - Campus Facilities
+   - Library and Labs
+   - Sports
+   - Transport
+   - Rankings and Accreditation
+   - Contact and Location
+
+   Each category should trigger an actual enquiry for the selected university, not display hardcoded sample information.
+
+5. College comparison:
+   - Allow users to select colleges.
+   - Display meaningful comparison information.
+   - Show unavailable information as "Not Available" rather than inventing values.
+
+6. Saved colleges:
+   - Implement save and unsave functionality.
+   - Persist saved colleges appropriately.
+   - If authentication or database persistence is not implemented, clearly explain the limitation and do not pretend that data is permanently saved.
+
+7. Notifications:
+   - Remove fake notifications.
+   - Display actual notifications only if the application has a working notification system.
+   - Otherwise show a clean empty state.
+
+8. Profile and settings:
+   - Make available profile and settings actions functional.
+   - Do not create fake authentication or pretend that a user is logged in.
+
+========================================
+PHASE 5 — DATA ACCURACY AND TRUST
+========================================
+
+UniLook AI is an AI-powered college discovery and enquiry platform.
+
+It must never invent university information.
+
+Requirements:
+
+- Use the existing Gemini API integration.
+- Preserve Google Search grounding functionality.
+- Use reliable and relevant sources for university information.
+- Display source links and citations where available.
+- Distinguish verified, partially verified, and unverified information.
+- Never present sample data as actual university data.
+- If reliable information is unavailable, clearly communicate that.
+- Do not generate fake placement packages, fees, rankings, scholarships, or admission dates.
+- Do not create fake search results to fill empty space.
+
+Remove any fallback logic that silently returns fake university information.
+
+========================================
+PHASE 6 — LOADING, ERROR AND EMPTY STATES
+========================================
+
+Every major feature should have appropriate UI states.
+
+Implement:
+
+- Loading skeletons.
+- Search loading indicators.
+- AI response loading indicators.
+- Empty search results.
+- No selected college states.
+- API error messages.
+- Retry actions.
+- Network failure handling.
+- Disabled button states where appropriate.
+- Success feedback after successful actions.
+
+These states should match the existing UniLook AI theme.
+
+Never leave the user staring at a blank screen.
+
+========================================
+PHASE 7 — RESPONSIVE DESIGN
+========================================
+
+Test and improve the application for:
+
+- Desktop screens.
+- Laptop screens.
+- Tablets.
+- Mobile phones.
+
+Ensure:
+
+- No overlapping components.
+- No broken navigation.
+- No horizontal scrolling caused by layout issues.
+- Search and chat interfaces fit smaller screens.
+- Cards rearrange properly.
+- Buttons remain accessible.
+- Text remains readable.
+
+========================================
+PHASE 8 — CODE QUALITY AND SECURITY
+========================================
+
+Inspect the existing codebase and:
+
+- Remove unused demo components and obsolete code where safe.
+- Remove unused imports and duplicate styles.
+- Avoid unnecessary packages.
+- Preserve existing API routes.
+- Preserve Gemini API integration.
+- Preserve `.env.local` and all environment variable values.
+- Never expose API keys in frontend code.
+- Validate API request inputs.
+- Handle API failures properly.
+- Avoid unnecessary changes to working backend code.
+- Keep components reusable and maintainable.
+
+Do not delete anything important just to simplify the project.
+
+========================================
+PHASE 9 — FINAL TESTING
+========================================
+
+After all changes:
+
+1. Run the development server.
+2. Open the actual localhost application.
+3. Visit every available page.
+4. Test every visible button and interactive element.
+5. Test college search using real queries.
+6. Test college selection.
+7. Test AI chat and follow-up questions.
+8. Test enquiry categories.
+9. Test comparison functionality.
+10. Test saved colleges.
+11. Test empty and error states.
+12. Test mobile responsiveness.
+13. Check browser console errors.
+14. Check terminal errors.
+15. Run `npm run build`.
+16. Fix all relevant errors.
+
+Do not claim a feature is functional unless you have actually tested it.
+
+If a feature requires a missing database, authentication provider, API, or external integration, explain the dependency clearly. Do not simulate success or create fake functionality.
+
+========================================
+FINAL DESIGN EXPECTATION
+========================================
+
+The final UniLook AI website should:
+
+- Look premium and professional.
+- Have a clean, systematic layout.
+- Contain no misleading demo universities or fake statistics.
+- Never look unnecessarily empty.
+- Have properly organized information.
+- Have working buttons and navigation.
+- Have functional college search and AI enquiry.
+- Display reliable university information with sources.
+- Work smoothly on desktop and mobile.
+
+MOST IMPORTANT:
+
+Do not redesign everything from scratch.
+
+Preserve my existing Google Stitch UI design, improve its organization, remove unnecessary demo content, and make the existing features genuinely functional.
+
+Start by auditing the complete project, then implement the improvements systematically. Continue until the implementation and testing are complete.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-11-17T23:01:39+05:30.
+
+The user's current state is as follows:
+Active Document: c:\Users\padey\OneDrive\Desktop\COLLEGE AGENT\unilook-ai\supabase\schema.sql (LANGUAGE_UNSPECIFIED)
+Cursor is on line: 1
+Other open documents:
+- c:\Users\padey\OneDrive\Desktop\COLLEGE AGENT\unilook-ai\.env.local (LANGUAGE_UNSPECIFIED)
+- c:\Users\padey\OneDrive\Desktop\COLLEGE AGENT\unilook-ai\.gitignore (LANGUAGE_UNSPECIFIED)
+- c:\Users\padey\OneDrive\Desktop\COLLEGE AGENT\unilook-ai\supabase\migrations\20261117000000_unilook_initial_schema.sql (LANGUAGE_UNSPECIFIED)
+- c:\Users\padey\OneDrive\Desktop\COLLEGE AGENT\unilook-ai\src\lib\gemini.ts (LANGUAGE_UNSPECIFIED)
+- c:\Users\padey\OneDrive\Desktop\COLLEGE AGENT\unilook-ai\src\app\page.tsx (LANGUAGE_UNSPECIFIED)
+</ADDITIONAL_METADATA>
